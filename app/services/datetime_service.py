@@ -4,5 +4,5 @@ import pytz
 
 
 def get_current_datetime() -> str:
-    tz = pytz.timezone('America/Sao_Paulo')
+    tz = pytz.timezone("America/Sao_Paulo")
     return datetime.now(tz).isoformat()

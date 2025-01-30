@@ -19,6 +19,7 @@ app.include_router(
     responses={HTTPStatus.NOT_FOUND.value: {"description": "Not found"}},
 )
 
+
 @app.get("/", status_code=HTTPStatus.OK, response_model=MessageSchema)
 def read_root():
     return {"message": "Welcome to the FastAPI UV Datetime API"}
