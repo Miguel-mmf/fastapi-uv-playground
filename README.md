@@ -23,36 +23,32 @@ This repository contains a FastAPI application designed to return the current da
 
 
 
-## Projetc structure
+## Repo structure
 
 ```
 fastapi-uv-datetime/
-├── .gitignore
+├── Dockerfile
 ├── README.md
-├── pyproject.toml
-├── poetry.lock
-├── app/
-│   ├── __init__.py
-│   ├── main.py
-│   ├── api/
-│   │   ├── __init__.py
+├── app
+│   ├── api
 │   │   └── endpoints.py
-│   ├── core/
-│   │   ├── __init__.py
-│   │   └── config.py
-│   ├── models/
-│   │   ├── __init__.py
-│   │   └── datetime_model.py
-│   ├── schemas/
-│   │   ├── __init__.py
-│   │   └── datetime_schema.py
-│   └── services/
-│       ├── __init__.py
-│       └── datetime_service.py
-├── tests/
-│   ├── __init__.py
-│   └── test_datetime.py
-└── Dockerfile
+│   ├── main.py
+│   ├── schemas
+│   │   ├── datetime_schema.py
+│   │   └── schemas.py
+│   ├── services
+│   │   └── datetime_service.py
+│   └── settings
+│       └── settings.py
+├── docs
+│   ├── notes.md
+│   └── run_application.md
+├── hello.py
+├── pyproject.toml
+├── tests
+│   ├── conftest.py
+│   └── test_datetime_services.py
+└── uv.lock
 ```
 
 
