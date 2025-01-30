@@ -5,6 +5,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      PROJECT_NAME: ${{ secrets.PROJECT_NAME }}
+      PROJECT_DESCRIPTION: ${{ secrets.PROJECT_DESCRIPTION }}
+      PROJECT_VERSION: ${{ secrets.PROJECT_VERSION }}
+
     steps:
       - name: Copia os arquivos do repositório
         uses: actions/checkout@v3
